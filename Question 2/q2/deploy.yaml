@@ -1,0 +1,19 @@
+apiVersion: v1 
+kind: Pod 
+metadata:   
+  name: heliport 
+spec:   
+  containers:     
+    - image: kenjasim/heliport       
+      name: heliport
+      livenessProbe:         
+        httpGet:            
+          path: /api/resources/all           
+          port: 5000         
+        initialDelaySeconds: 5         
+        timeoutSeconds: 1         
+        periodSeconds: 10         
+        failureThreshold: 3   
+      ports:
+      - name: api
+        containerPort: 5000
