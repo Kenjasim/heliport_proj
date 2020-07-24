@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: servkenan
 spec:
+  type: NodePort
   selector:
     app: appkenan
   ports:
     - protocol: TCP
-      port: 5000
-      targetPort: 30488
-  type: LoadBalancer
+      port: 6285
+      nodePort: 30488

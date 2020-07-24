@@ -10,5 +10,7 @@ RUN pip install flask
 #Copy all files into the image
 COPY . .
 
+EXPOSE 5000
+
 # Run the transmitter
 CMD ["python3", "api.py"]

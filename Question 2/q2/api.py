@@ -41,14 +41,4 @@ def api_takeoff():
         return "Could not take off as flying"  
 
 
-# @app.route('/api/resources/heliport/<int:task_id>', methods=['GET'])
-# def get_task(task_id):
-#     task = [task for task in tasks if task['id'] == task_id]
-#     if len(task) == 0:
-#         abort (404)
-#     else:
-
-#     return jsonify ({'task': task[0]})
-
-
 app.run(host= '0.0.0.0')
