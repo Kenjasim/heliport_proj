@@ -10,7 +10,3 @@ spec:
       port: 5000
       targetPort: 30488
   type: LoadBalancer
-  status:
-    loadBalancer:
-      ingress:
-      - ip: 10.244.0.6
