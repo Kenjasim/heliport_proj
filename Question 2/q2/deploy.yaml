@@ -1,7 +1,7 @@
 apiVersion: v1 
 kind: Pod 
 metadata:   
-  name: app/kenan 
+  name: app_kenan 
 spec:   
   containers:     
     - image: kenjasim/heliport       
