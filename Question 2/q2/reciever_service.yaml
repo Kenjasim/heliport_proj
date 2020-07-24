@@ -9,7 +9,6 @@ spec:
     - protocol: TCP
       port: 5000
       targetPort: 30488
-  clusterIP: 10.0.171.239
   type: LoadBalancer
   status:
     loadBalancer:
