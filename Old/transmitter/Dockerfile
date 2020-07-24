@@ -5,10 +5,13 @@ FROM python:3
 WORKDIR /usr/src/app
 
 #Instal the requests module
-RUN pip install flask
+RUN pip install requests
 
 #Copy all files into the image
 COPY . .
 
 # Run the transmitter
-CMD ["python3", "api.py"]
+CMD ["python3", "transmitter.py"]
+
+
+
