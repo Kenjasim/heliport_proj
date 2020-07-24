@@ -51,4 +51,4 @@ def api_takeoff():
 #     return jsonify ({'task': task[0]})
 
 
-app.run()
+app.run(host= '0.0.0.0')

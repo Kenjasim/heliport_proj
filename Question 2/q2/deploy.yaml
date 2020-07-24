@@ -5,7 +5,7 @@ metadata:
 spec:   
   containers:     
     - image: kenjasim/heliport       
-      name: heliport
+      name: app:kenan
       livenessProbe:         
         httpGet:            
           path: /api/resources/all           
